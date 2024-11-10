@@ -85,8 +85,8 @@ npm test
 
 ## Deployment
 
-The application has been deployed to [Vercel](#link-to-deployment), and can be accessed directly from the following URL:
-- [Deployed Application](#link-to-deployment)
+The application has been deployed to [Vercel](https://web-hiring-platform.vercel.app/), and can be accessed directly from the following URL:
+- [Deployed Application](https://web-hiring-platform.vercel.app/)
 
 ## Evaluation Criteria
 - **Code quality**: The code is modular, clean, and follows best practices.
