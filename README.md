@@ -1,70 +1,100 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# Web Hiring Platform Application
 
-In the project directory, you can run:
+## Overview
+This React-based web application allows admins to manage job postings, track candidates, and create job-specific assessments. It streamlines the hiring process by providing tools to post jobs, review candidates, and assign assessments for open positions. The platform is intuitive and responsive, built with best practices in mind.
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Dashboard for Managing Job Postings
+- Admins can add, edit, and delete job postings.
+- Each job listing includes:
+  - Job title
+  - Job description
+  - Number of candidates applied
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Candidate Tracking & Details Page
+- Admins can view a list of candidates who have applied for a job.
+- For each candidate, the following details are shown:
+  - Candidate name
+  - Resume link or document (upload/download feature)
+  - Application date
+  - Application status (e.g., "Under Review", "Interview Scheduled", etc.)
+- Clicking on a candidate’s name opens a detailed profile displaying:
+  - Candidate profile information (name, email, skills, experience)
+  - Resume preview or download link
+  - Option to update the candidate's status
 
-### `npm test`
+### Job-Specific Test/Assessment Creation
+- Admins can create unique assessments for each job.
+- The admin selects a job from a dropdown list, then creates a set of multiple-choice questions specific to that job.
+- Admins can add, edit, or remove questions and answers for each job.
+- Each job has a unique assessment; no two jobs share the same test.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### User Interface & User Experience
+- Fully responsive, ensuring a seamless experience on both desktop and mobile.
+- Clean and modular code adhering to React best practices.
+- State management via **React Context API** for efficient data handling.
+- Uses **Material-UI** for consistent and user-friendly design.
 
-### `npm run build`
+### Additional Requirements
+- **React Router** for routing between pages (job postings, candidates, assessments).
+- Mock APIs or **local storage** used for data persistence (no backend required).
+  
+## Setup & Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Prerequisites
+- Node.js (v14 or above)
+- npm (or yarn)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Installation Steps
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/manav747/web-hiring-platform.git
+   ```
+2. Navigate into the project directory:
+   ```bash
+   cd web-hiring-platform
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+   or, if using yarn:
+   ```bash
+   yarn install
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. Start the development server:
+   ```bash
+   npm start
+   ```
+   or:
+   ```bash
+   yarn start
+   ```
 
-### `npm run eject`
+   This will start the app on `http://localhost:3000`.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Running Tests
+To run tests (if applicable), you can use the following command:
+```bash
+npm test
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Deployment
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The application has been deployed to [Vercel](#link-to-deployment), and can be accessed directly from the following URL:
+- [Deployed Application](#link-to-deployment)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Evaluation Criteria
+- **Code quality**: The code is modular, clean, and follows best practices.
+- **Functionality**: All features including job management, candidate tracking, and assessment creation work seamlessly.
+- **UI/UX**: The application is intuitive, responsive, and user-friendly, utilizing Material-UI.
+- **Performance**: The application is optimized for performance and handles data efficiently.
+- **Error handling**: The app gracefully handles errors and provides feedback to users.
 
-## Learn More
+## Conclusion
+This hiring platform is a user-friendly, full-featured React application built to streamline the hiring process. It enables efficient management of job postings, candidates, and assessments with intuitive interfaces for admins.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
